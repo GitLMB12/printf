@@ -46,9 +46,9 @@ int _printf(const char *format, ...)
 		else
 		{
 			_putchar(*format);
-			count++; }
+			count++;
+			format++; }
 	}
-	format++;
 	va_end(path);
 	return (count);
 }
