@@ -1,15 +1,14 @@
-#include "main"
+#include "main.h"
 
 /**
  * print_string - prints a string
  * @str: numberof arguements
- * @i: the printed characters
  * Return: printed charcaters
  */
 
-int print_string(const char *str, int i)
+int print_string(const char *str)
 {
-	 i = 0;
+	 int i = 0;
 
 	if (str == NULL)
 	{
