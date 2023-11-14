@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * printf_integer - prints an integer number
+ * _integer - prints an integer number
  * @path: arguments list
  * @count: the count of printed characters
  * Return: updated count of printed characters
  */
-int printf_integer(va_list path, int count)
+int _integer(va_list path, int count)
 {
 	int num = va_arg(path, int);
 	int t = num;
