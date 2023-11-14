@@ -21,9 +21,10 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			count += _putchar(*format);
+			_putchar(*format);
+			count++;
+			format++;
 		}
-		format++;
 	}
 	va_end(path);
 	return count;
