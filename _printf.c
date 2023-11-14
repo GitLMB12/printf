@@ -10,8 +10,6 @@ int _printf(const char *format, ...)
 	int count = 0;
 	va_list path;
 
-	if (!format || !format[0])
-		return (-1);
 	va_start(path, format);
 	while (*format)
 	{
@@ -23,11 +21,10 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			_putchar(*format);
-			count++;
-			format++;
+			count += _putchar(*format);
 		}
+		format++;
 	}
 	va_end(path);
-	return (count);
+	return count;
 }
