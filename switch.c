@@ -10,7 +10,10 @@
 
 int selector(const char *format, va_list path, int count)
 {
-	if (*format == 'c')
+	if (*format == 'd' || *format == 'i')
+	{
+		count = printf_integer(path, count); }
+	else if (*format == 'c')
 	{
 		_putchar(va_arg(path, int));
 		count++; }
