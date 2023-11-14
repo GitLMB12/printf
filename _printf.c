@@ -27,5 +27,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(path);
-	return count;
+	return (count);
 }
